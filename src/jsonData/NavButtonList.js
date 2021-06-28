@@ -11,9 +11,9 @@ const navbutton = [
   {
     button: "SQL",
   },
-  {
-    button: "PYTHON",
-  },
+  // {
+  //   button: "PYTHON",
+  // },
   {
     button: "PHP",
   },

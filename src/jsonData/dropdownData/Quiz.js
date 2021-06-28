@@ -43,29 +43,29 @@ const quiz = [
         language: "JQUERY QUIZ",
         category: "JQUERYQUIZ",
     },
-    {
-        language: "JAVA QUIZ",
-        category: "JAVAQUIZ",
-    },
-    {
-        language: "BOOTSTRAP QUIZ",
-        category: "BOOTSTRAPQUIZ",
-    },
-    {
-        language: "BOOTSTRAP4 QUIZ",
-        category: "BOOTSTRAP4QUIZ",
-    },
-    {
-        language: "C++ QUIZ",
-        category: "C++QUIZ",
-    },
-    {
-        language: "C# QUIZ",
-        category: "C#QUIZ",
-    },
-    {
-        language: "R QUIZ",
-        category: "RQUIZ",
-    },
+    // {
+    //     language: "JAVA QUIZ",
+    //     category: "JAVAQUIZ",
+    // },
+    // {
+    //     language: "BOOTSTRAP QUIZ",
+    //     category: "BOOTSTRAPQUIZ",
+    // },
+    // {
+    //     language: "BOOTSTRAP4 QUIZ",
+    //     category: "BOOTSTRAP4QUIZ",
+    // },
+    // {
+    //     language: "C++ QUIZ",
+    //     category: "C++QUIZ",
+    // },
+    // {
+    //     language: "C# QUIZ",
+    //     category: "C#QUIZ",
+    // },
+    // {
+    //     language: "R QUIZ",
+    //     category: "RQUIZ",
+    // },
 ];
 export default quiz;

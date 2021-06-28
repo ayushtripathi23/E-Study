@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center">
     <div v-if="showScore">
-      <b-card title="Results" style="max-width: 20rem">
+      <b-card title="Results" style="max-width: 30rem; margin-top: 30px">
         You Scored {{ score }} of {{ quizCategory.body.length }}
       </b-card>
     </div>
@@ -11,7 +11,7 @@
           img-src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
           img-alt="Image"
           img-top
-          style="max-width: 20rem"
+          style="max-width: 20rem; margin-top: 30px"
           class="mb-2"
         >
           {{ quizName }}
@@ -67,6 +67,13 @@
 import quizData from "./QuizData";
 import javaQuiz from "./JavaScriptQuiz";
 import cssData from "./CssQuiz";
+import sqlData from "./SqlQuiz";
+import mysqldata from "./MySqlQuiz";
+import phpdata from "./PhpQuiz";
+import pythondata from "./PythonQuiz";
+import numpydata from "./Numpy";
+import scipydata from "./SciPyQuiz";
+import jquerydata from "./Jquery";
 export default {
   data() {
     return {
@@ -121,9 +128,20 @@ export default {
     console.log(this.$route.params.qid);
     // console.log(cssData.language,quizData.language)
     this.quizName = this.$route.params.qid;
-    console.log(this.quizName)
-    this.questions.push(quizData, javaQuiz , cssData);
-    console.log(this.questions)
+    console.log(this.quizName);
+    this.questions.push(
+      quizData,
+      javaQuiz,
+      cssData,
+      sqlData,
+      mysqldata,
+      phpdata,
+      pythondata,
+      numpydata,
+      scipydata,
+      jquerydata
+    );
+    console.log(this.questions);
     this.quizCategory = this.questions.find((lang) => {
       return lang.language === this.quizName;
     });
