@@ -7,6 +7,8 @@ const homepagedata = [
     buttonReferenceLink: "hey2",
     buttonReference: "HTML Reference",
     titleExample: "HTML EXAMPLE",
+    codeDescription: "<HTML> \n <Head> \n </Head>\n <Body>\n   <h1>hey there! </h1> \n </Body> \n</HTML> ",
+    codeName: 'language-markup',
     tryItButton: "try it Yourself",
     color: "#282A35",
     tryItButtonLink:
@@ -19,6 +21,8 @@ const homepagedata = [
     buttonLink: "hey",
     buttonReferenceLink: "hey2",
     buttonReference: "CSS Reference",
+    codeDescription: '#class { \n background-color: red; }',
+    codeName: 'language-css',
     titleExample: "CSS EXAMPLE",
     tryItButton: "try it Yourself",
     tryItButtonLink:
@@ -31,6 +35,8 @@ const homepagedata = [
     button: "Learn JavaScript",
     buttonLink: "hey",
     buttonReferenceLink: "hey2",
+    codeName: 'language-js',
+    codeDescription: 'function myFunction() { \n var x = document.getElementById("demo"); \n x.style.fontSize = "25px"; \n x.style.color = "red"; \n}',
     buttonReference: "JavaScript Reference",
     titleExample: "JavaScript EXAMPLE",
     tryItButton: "try it Yourself",
@@ -60,6 +66,8 @@ const homepagedata = [
     buttonReference: "SQL Reference",
     titleExample: "SQL EXAMPLE",
     tryItButton: "try it Yourself",
+    codeDescription: "SELECT * FROM Customers \n WHERE Country='Mexico';",
+    codeName: 'language-python',
     tryItButtonLink:
       "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where",
     color: "#382A35",

@@ -20,8 +20,21 @@
 
         <div class="tryItContaner">
           <h4 class="tryItLabel">EXAMPLE</h4>
-          <div class="prismContainer"></div>
-          <button class="tryItButton">Try It Yourself</button>
+          <div class="prismContainer">
+            <pre
+              class="language-javascript"
+              style="background-color: rgb(49, 49, 49)"
+            ><code :class="`${list.codeName}`">
+{{list.codeDescription}}
+              </code>
+              </pre>
+          </div>
+          <button
+            @click="openTryItButton(list.codeEditorLink)"
+            class="tryItButton"
+          >
+            Try It Yourself
+          </button>
         </div>
       </div>
     </div>
@@ -40,12 +53,19 @@ import HowToDescription from "../../../jsonData/languagesModel/HowToDescription"
 import W3Description from "../../../jsonData/languagesModel/W3Description";
 import JavaDescription from "../../../jsonData/languagesModel/JavaDescription";
 import MySqldescription from "../../../jsonData/languagesModel/MySqldescription";
+import Prism from "prismjs";
+import "prismjs/themes/prism.css";
 export default {
   props: {
     // passIndex: {
     //   type: Number,
     //   default: 0,
     // },
+  },
+  mounted() {
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+    Prism.highlightAll(); // highlight your code on mount
   },
   computed: {
     currentSideBarList() {
@@ -105,6 +125,9 @@ export default {
     console.log(this.combinedata[0].language);
   },
   methods: {
+    openTryItButton(a) {
+      window.open(a);
+    },
     // subItemsFind(a) {
     //   if (a.match("^<") && a.match(">$")) {
     //     document.getElementById("demo").innerHTML = a.find(this.subItemsFind);
@@ -112,13 +135,18 @@ export default {
     // },
     // myFunction() {},
   },
-  mounted() {
-    console.log(this.passIndex);
-  },
+  // mounted() {
+  //   console.log(this.passIndex);
+  // },
 };
 </script>
 
 <style scoped>
+code[class*="language-"],
+pre[class*="language-"] {
+  text-shadow: none;
+  color: white;
+}
 .mainContainerView {
   width: 80%;
   background-color: rgb(255, 255, 255);
@@ -132,14 +160,14 @@ export default {
   margin-right: auto;
   border-radius: 1rem;
   background-color: rgb(219, 219, 219);
-  height: 450px;
+  height: auto;
 }
 .prismContainer {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(53, 51, 51);
-  height: 70%;
+  height: auto;
   border-radius: 1rem;
 }
 .htmlLabel {
@@ -174,6 +202,7 @@ export default {
   height: 40px;
   border-radius: 1rem;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 .goButton {
   width: 200px;
