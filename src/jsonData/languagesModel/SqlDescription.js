@@ -10,6 +10,9 @@ const SqlDescription = {
         "The following SQL statement selects all the records in the 'Customers' table:",
         "In this tutorial we will teach you all about the different SQL statements.",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all"
     },
     {
       languageId: 1,
@@ -21,6 +24,9 @@ const SqlDescription = {
         "SELECT Syntax",
         "Here, column1, column2, ... are the field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 1,
@@ -30,6 +36,9 @@ const SqlDescription = {
         "The following SQL statement selects the 'CustomerName' and 'City' columns from the 'Customers' table:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT CustomerName, City FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns"
     },
     {
       languageId: 1,
@@ -38,6 +47,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement selects all the columns from the 'Customers' table:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all"
     },
     {
       languageId: 2,
@@ -48,6 +60,9 @@ const SqlDescription = {
         "Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.",
         "SELECT DISTINCT Syntax",
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 2,
@@ -58,6 +73,9 @@ const SqlDescription = {
         "Now, let us use the SELECT DISTINCT statement and see the result.",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_no_distinct"
     },
     {
       languageId: 2,
@@ -68,6 +86,9 @@ const SqlDescription = {
         "The following SQL statement lists the number of different (distinct) customer countries:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT DISTINCT Country FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_distinct"
     },
     {
       languageId: 3,
@@ -78,6 +99,9 @@ const SqlDescription = {
         "It is used to extract only those records that fulfill a specified condition.",
         "WHERE Syntax",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE Country='Mexico';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where"
     },
     {
       languageId: 3,
@@ -87,6 +111,9 @@ const SqlDescription = {
         "SQL requires single quotes around text values (most database systems will also allow double quotes).",
         "However, numeric fields should not be enclosed in quotes:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE CustomerID=1;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where_number"
     },
     {
       languageId: 4,
@@ -99,6 +126,9 @@ const SqlDescription = {
         "The OR operator displays a record if any of the conditions separated by OR is TRUE.",
         "The NOT operator displays a record if the condition(s) is NOT TRUE."
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 4,
@@ -108,6 +138,9 @@ const SqlDescription = {
         "The following SQL statement selects all fields from 'Customers' where country is 'Germany' AND city is 'Berlin':",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE Country='Germany' AND City='Berlin';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where_and"
     },
     {
       languageId: 4,
@@ -118,6 +151,9 @@ const SqlDescription = {
         "The following SQL statement selects all fields from 'Customers' where country is 'Germany' OR 'Spain':"
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE City='Berlin' OR City='München';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where_or"
     },
     {
       languageId: 4,
@@ -128,6 +164,9 @@ const SqlDescription = {
 
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE NOT Country='Germany';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where_not"
     },
     {
       languageId: 4,
@@ -140,6 +179,9 @@ const SqlDescription = {
 
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nWHERE Country='Germany' AND(City = 'Berlin' OR City = 'München');",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where_and_or"
     },
     // order by 
     {
@@ -153,6 +195,9 @@ const SqlDescription = {
 
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 5,
@@ -161,6 +206,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement selects all customers from the 'Customers' table, sorted by the 'Country' column:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nORDER BY Country;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_orderby"
     },
     {
       languageId: 5,
@@ -169,6 +217,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement selects all customers from the 'Customers' table, sorted DESCENDING by the 'Country' column:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nORDER BY Country DESC;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_orderby_desc"
     },
     {
       languageId: 5,
@@ -177,6 +228,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement selects all customers from the 'Customers' table, sorted by the 'Country' and the 'CustomerName' column. This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT * FROM Customers\nORDER BY Country, CustomerName;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_orderby2"
     },
     // insert ito 
     {
@@ -190,6 +244,9 @@ const SqlDescription = {
         "1. Specify both the column names and the values to be inserted:",
         " If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table. Here, the INSERT INTO syntax would be as follows:"
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 6,
@@ -199,6 +256,9 @@ const SqlDescription = {
         "The following SQL statement inserts a new record in the 'Customers' table:",
         "The selection from the 'Customers' table will now look like this:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_insert_colname"
     },
     {
       languageId: 6,
@@ -209,6 +269,9 @@ const SqlDescription = {
         "The following SQL statement will insert a new record, but only insert data in the 'CustomerName', 'City', and 'Country' columns (CustomerID will be updated automatically):",
         "The selection from the 'Customers' table will now look like this:"
       ],
+      codeName: 'language-sql',
+      codeDescription: "INSERT INTO Customers (CustomerName, City, Country)\nVALUES('Cardinal', 'Stavanger', 'Norway');",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_insert_cols"
     },
     // null vallues 
     {
@@ -223,6 +286,9 @@ const SqlDescription = {
         "We will have to use the IS NULL and IS NOT NULL operators instead.",
         "IS NULL Syntax"
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 7,
@@ -233,6 +299,9 @@ const SqlDescription = {
         "The following SQL lists all customers with a NULL value in the 'Address' field:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address IS NULL;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_is_null"
     },
     {
       languageId: 7,
@@ -243,6 +312,9 @@ const SqlDescription = {
         "The following SQL lists all customers with a value in the 'Address' field:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT CustomerName, ContactName, Address\nFROM Customers\nWHERE Address IS NOT NULL;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_is_not_null"
     },
     // update 
     {
@@ -254,6 +326,9 @@ const SqlDescription = {
         "UPDATE Syntax",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 8,
@@ -264,6 +339,9 @@ const SqlDescription = {
         "The selection from the 'Customers' table will now look like this:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "UPDATE Customers\nSET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\nWHERE CustomerID = 1;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_update_2"
     },
     {
       languageId: 8,
@@ -275,6 +353,9 @@ const SqlDescription = {
         "The selection from the 'Customers' table will now look like this:"
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "UPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_update_3"
     },
     // delete section
     {
@@ -286,6 +367,9 @@ const SqlDescription = {
         "DELETE Syntax",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 9,
@@ -296,6 +380,9 @@ const SqlDescription = {
         "DELETE Syntax",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 9,
@@ -306,6 +393,9 @@ const SqlDescription = {
         "The 'Customers' table will now look like this:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_delete"
     },
     {
       languageId: 9,
@@ -316,6 +406,9 @@ const SqlDescription = {
         "The following SQL statement deletes all rows in the 'Customers' table, without deleting the table:",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "DELETE FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_delete_all"
     },
     // select top 
     {
@@ -327,6 +420,9 @@ const SqlDescription = {
         "The SELECT TOP clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.",
 
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 10,
@@ -337,6 +433,9 @@ const SqlDescription = {
         "The following SQL statement shows the equivalent example for MySQL:",
         "The following SQL statement shows the equivalent example for Oracle:"
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT TOP 3 * FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_top&ss=-1"
     },
     {
       languageId: 10,
@@ -346,6 +445,9 @@ const SqlDescription = {
         "The following SQL statement selects the first 50% of the records from the 'Customers' table (for SQL Server/MS Access):",
         "The following SQL statement shows the equivalent example for Oracle:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT TOP 50 PERCENT * FROM Customers;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_top_percent&ss=-1"
     },
     // min and max 
     {
@@ -356,6 +458,9 @@ const SqlDescription = {
         "The MIN() function returns the smallest value of the selected column.",
         "The MAX() function returns the largest value of the selected column.",
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 11,
@@ -364,6 +469,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement finds the price of the cheapest product:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT MIN(Price) AS SmallestPrice\nFROM Products;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_min"
     },
     {
       languageId: 11,
@@ -372,6 +480,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement finds the price of the most expensive product:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT MAX(Price) AS LargestPrice\nFROM Products;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_max"
     },
     // count average sum 
     {
@@ -384,6 +495,9 @@ const SqlDescription = {
         "COUNT() Syntax",
         "The AVG() function returns the average value of a numeric column. "
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 12,
@@ -392,6 +506,9 @@ const SqlDescription = {
       languageBody: [
         "The AVG() function returns the average value of a numeric column. ",
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 12,
@@ -400,6 +517,9 @@ const SqlDescription = {
       languageBody: [
         "The SUM() function returns the total sum of a numeric column.  ",
       ],
+      codeName: 'language-sql',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 12,
@@ -408,6 +528,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement finds the number of products:  ",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT COUNT(ProductID)\nFROM Products;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_count"
     },
     {
       languageId: 12,
@@ -416,6 +539,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement finds the average price of all products:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT AVG(Price)\nFROM Products;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_avg"
     },
     {
       languageId: 12,
@@ -424,6 +550,9 @@ const SqlDescription = {
       languageBody: [
         "The following SQL statement finds the sum of the 'Quantity' fields in the 'OrderDetails' table:",
       ],
+      codeName: 'language-sql',
+      codeDescription: "SELECT SUM(Quantity)\nFROM OrderDetails;",
+      codeEditorLink: "https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_sum"
     },
   ],
 };

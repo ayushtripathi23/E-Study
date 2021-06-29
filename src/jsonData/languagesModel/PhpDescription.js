@@ -12,6 +12,9 @@ const PhpDescription = {
         "A PHP file normally contains HTML tags, and some PHP scripting code.",
         "Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function 'echo' to output the text 'Hello World!'' on a web page:"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho 'Hello World!'';\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_syntax"
     },
     {
       languageId: 0,
@@ -22,6 +25,9 @@ const PhpDescription = {
         "In the example below, all three echo statements below are equal and legal:",
         "Look at the example below; only the first statement will display the value of the $color variable! This is because $color, $COLOR, and $coLOR are treated as three different variables:.",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\nECHO 'Hello World!<br>';\necho 'Hello World!<br>'';\nEcHo 'Hello World!<br>'';\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_syntax_case1"
     },
     {
       languageId: 1,
@@ -34,6 +40,9 @@ const PhpDescription = {
         "Remind yourself of what you did - Most programmers have experienced coming back to their own work a year or two later and having to re-figure out what they did. Comments can remind you of what you were thinking when you wrote the code",
         "PHP supports several ways of commenting:"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n// This is a single-line comment\n# This is also a single- line comment\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_comments"
     },
     {
       languageId: 2,
@@ -45,6 +54,9 @@ const PhpDescription = {
         "Note: When you assign a text value to a variable, put quotes around the value.",
         "Note: Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you first assign a value to it.",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$txt = 'Hello world!'';\n$x = 5;\n$y = 10.5;\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_var"
     },
     {
       languageId: 2,
@@ -59,6 +71,9 @@ const PhpDescription = {
         "A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )",
         "Variable names are case-sensitive ($age and $AGE are two different variables)"
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 2,
@@ -69,6 +84,9 @@ const PhpDescription = {
         "The following example will show how to output text and a variable:",
         "The following example will produce the same output as the example above:",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$txt = 'W3Schools.com';\necho 'I love $txt!';\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_var2"
     },
     {
       languageId: 3,
@@ -82,6 +100,9 @@ const PhpDescription = {
         "The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions. echo can take multiple parameters (although such usage is rare) while print can take one argument. echo is marginally faster than print.",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 3,
@@ -92,6 +113,9 @@ const PhpDescription = {
         "Display Text",
         "The following example shows how to output text with the echo command (notice that the text can contain HTML markup):",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho '<h2>PHP is Fun!</h2>';\necho 'Hello world!<br>'';\necho 'I'm about to learn PHP!<br>';\necho 'This ', 'string ', 'was ', 'made ', 'with multiple parameters.';\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_echo1"
     },
     {
       languageId: 4,
@@ -110,6 +134,9 @@ const PhpDescription = {
         "A string is a sequence of characters, like 'Hello world!'.",
         "A string can be any text inside quotes. You can use single or double quotes:"
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 4,
@@ -123,6 +150,9 @@ const PhpDescription = {
         "An integer can be either positive or negative",
         "Integers can be specified in: decimal (base 10), hexadecimal (base 16), octal (base 8), or binary (base 2) notation"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$x = 5985;\nvar_dump($x);\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_integer"
     },
     {
       languageId: 4,
@@ -132,6 +162,9 @@ const PhpDescription = {
         "In the following example $x is a float. The PHP var_dump() function returns the data type and value:",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$x = 10.365;\nvar_dump($x);\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_datatypes_float"
     },
     {
       languageId: 4,
@@ -142,6 +175,9 @@ const PhpDescription = {
         "Booleans are often used in conditional testing. You will learn more about conditional testing in a later chapter of this tutorial.",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "$x = true;\n$y = false;",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_var2"
     },
     // php string 
     {
@@ -153,6 +189,9 @@ const PhpDescription = {
         "strlen() - Return the Length of a String",
         "The PHP strlen() function returns the length of a string."
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho strlen('Hello world!'); // outputs 12\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_length"
     },
     {
       languageId: 5,
@@ -161,6 +200,9 @@ const PhpDescription = {
       languageBody: [
         "The PHP strrev() function reverses a string.",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho strrev('Hello world!''); // outputs !dlrow olleH\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_reverse"
     },
     {
       languageId: 5,
@@ -170,6 +212,9 @@ const PhpDescription = {
         "The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho strpos('Hello world!', 'world'); // outputs 6\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_string_pos"
     },
     // php numbers 
     {
@@ -195,6 +240,9 @@ const PhpDescription = {
         "is_integer() - alias of is_int()",
         "is_long() - alias of is_int()"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$x = 5985;\nvar_dump(is_int($x));\n$x = 59.85;\nvar_dump(is_int($x));\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_numbers_integer"
     },
     // php math 
     {
@@ -206,6 +254,9 @@ const PhpDescription = {
         "PHP pi() Function",
         "The pi() function returns the value of PI:"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho(pi()); // returns 3.1415926535898\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_pi"
     },
     {
       languageId: 7,
@@ -215,6 +266,9 @@ const PhpDescription = {
         "The min() and max() functions can be used to find the lowest or highest value in a list of arguments:",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho(min(0, 150, 30, 20, -8, -200));  // returns -200\n  echo(max(0, 150, 30, 20, -8, -200));  // returns 150\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_min_max"
     },
     {
       languageId: 7,
@@ -224,6 +278,9 @@ const PhpDescription = {
         "The abs() function returns the absolute (positive) value of a number:",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho(abs(-6.7));  // returns 6.7\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_abs"
     },
     {
       languageId: 7,
@@ -233,6 +290,9 @@ const PhpDescription = {
         "The sqrt() function returns the square root of a number:",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho(sqrt(64));  // returns 8\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_sqrt"
     },
     {
       languageId: 7,
@@ -242,6 +302,9 @@ const PhpDescription = {
         "The round() function rounds a floating-point number to its nearest integer:",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\necho(round(0.60));  // returns 1\n  echo(round(0.49));  // returns 0\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_math_round"
     },
 
     // php const 
@@ -255,6 +318,9 @@ const PhpDescription = {
         "Note: Unlike variables, constants are automatically global across the entire script."
 
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 8,
@@ -269,6 +335,9 @@ const PhpDescription = {
         "case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false"
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\ndefine('GREETING', 'Welcome to W3Schools.com!');\n  echo GREETING;\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_constant1"
     },
     {
       languageId: 8,
@@ -277,6 +346,9 @@ const PhpDescription = {
       languageBody: [
         "Constants are automatically global and can be used across the entire script.",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\ndefine('GREETING', 'Welcome to W3Schools.com!');\nfunction myTest() {\necho GREETING;\n}\nmyTest();\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_constant3"
     },
     // php operators
     {
@@ -295,6 +367,9 @@ const PhpDescription = {
         "Array operators",
         "Conditional assignment operators"
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     // php if else
     {
@@ -310,6 +385,9 @@ const PhpDescription = {
         "The if statement executes some code if one condition is true.",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$t = date('H');\nif($t < '20') {\necho 'Have a good day!';\n}\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if"
     },
     {
       languageId: 10,
@@ -320,6 +398,9 @@ const PhpDescription = {
 
 
       ],
+      codeName: 'language-php',
+      codeDescription: "if (condition) {\n  code to be executed if condition is true;\n    } else {\n      code to be executed if condition is false;\n    }",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if_else"
     },
     {
       languageId: 10,
@@ -328,6 +409,9 @@ const PhpDescription = {
       languageBody: [
         "The if...elseif...else statement executes different codes for more than two conditions.",
       ],
+      codeName: 'language-php',
+      codeDescription: "if (condition) {\ncode to be executed if this condition is true;\n} elseif(condition) {\ncode to be executed if first condition is false and this condition is true;\n} else {\ncode to be executed if all conditions are false;\n}",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_if_elseif"
     },
     {
       languageId: 11,
@@ -337,6 +421,9 @@ const PhpDescription = {
         "Use the switch statement to select one of many blocks of code to be executed.",
         "This is how it works: First we have a single expression n (most often a variable), that is evaluated once. The value of the expression is then compared with the values for each case in the structure. If there is a match, the block of code associated with that case is executed. Use break to prevent the code from running into the next case automatically. The default statement is used if no match is found."
       ],
+      codeName: 'language-php',
+      codeDescription: "switch (n) {\n  case label1:\n      code to be executed if n = label1;\n      break;\n      case label2:\n      code to be executed if n = label2;\n      break;\n      case label3:\n      code to be executed if n = label3;\n      break;\n      ...\n  default:\n        code to be executed if n is different from all labels;\n    }",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_switch"
     },
     {
       languageId: 12,
@@ -352,6 +439,9 @@ const PhpDescription = {
         "foreach - loops through a block of code for each element in an array",
         "The following chapters will explain and give examples of each loop type."
       ],
+      codeName: 'language-php',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 13,
@@ -365,6 +455,9 @@ const PhpDescription = {
         "Create a User Defined Function in PHP",
         "A user-defined function declaration starts with the word function:"
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\nfunction writeMsg() {\n      echo 'Hello world!';\n    }\nwriteMsg(); // call the function\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_function1"
     },
     {
       languageId: 13,
@@ -377,6 +470,9 @@ const PhpDescription = {
         "The following example has a function with two arguments ($fname and $year):",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\nfunction familyName($fname) {\n      echo '$fname Refsnes.<br>';\n    }\nfamilyName('Jani');\n  familyName('Hege');\nfamilyName('Stale');\nfamilyName('Kai Jim');\nfamilyName('Borge');\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_function2"
     },
     // array
     {
@@ -391,6 +487,9 @@ const PhpDescription = {
         "An array can hold many values under a single name, and you can access the values by referring to an index number.",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$cars = array('Volvo', 'BMW', 'Toyota');\n      echo count($cars);\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_array_length"
     },
     {
       languageId: 14,
@@ -404,6 +503,9 @@ const PhpDescription = {
         "Multidimensional arrays - Arrays containing one or more arrays",
 
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$cars = array('Volvo', 'BMW', 'Toyota');\n      echo count($cars);\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_array_length"
     },
     {
       languageId: 14,
@@ -412,6 +514,9 @@ const PhpDescription = {
       languageBody: [
         "The count() function is used to return the length (the number of elements) of an array:",
       ],
+      codeName: 'language-php',
+      codeDescription: "<?php\n$cars = array('Volvo', 'BMW', 'Toyota');\n      echo count($cars);\n?>",
+      codeEditorLink: "https://www.w3schools.com/php/phptryit.asp?filename=tryphp_array_length"
     },
   ],
 };

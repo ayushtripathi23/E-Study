@@ -18,7 +18,7 @@
           </span>
         </h4>
 
-        <div class="tryItContaner">
+        <div class="tryItContaner" v-if="list.codeDescription">
           <h4 class="tryItLabel">EXAMPLE</h4>
           <div class="prismContainer">
             <pre
@@ -79,6 +79,12 @@ export default {
       return cd || [];
     },
     currentNav() {
+      // window.Prism = window.Prism || {};
+      // window.Prism.manual = true;
+      this.$nextTick(() => {
+        console.log("-----");
+        Prism.highlightAll();
+      });
       // console.log("this.$route.params.id", this.$route.params.id);
       return this.$route.params.id;
     },
