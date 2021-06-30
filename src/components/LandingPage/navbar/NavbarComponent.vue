@@ -4,7 +4,12 @@
       style="height: 80px"
       class="navbar navbar-expand-lg navbar-dark bg-light"
     >
-      <a class="navbar-brand" href="#" style="color: black">E-Study</a>
+      <!-- <a class="navbar-brand" href="#" style="color: black">E-Study</a> -->
+      <img
+        src="https://i.pinimg.com/736x/54/26/4a/54264a84e2f96cb7a5c32efa99b4714d.jpg"
+        alt="E-Study"
+        style="width: auto; height: 70px; background: none"
+      />
       <button
         class="navbar-toggler"
         type="button"

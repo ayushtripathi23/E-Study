@@ -1,5 +1,9 @@
 <template>
   <div class="mainContainerView">
+    <div style="display:flex, justify-content:space-between">
+      <button class="tryItButton" @click="previous()">Previous</button>
+      <button class="tryItButton" @click="next()">Next</button>
+    </div>
     <div
       class="titletext"
       v-for="(list, index) in currentSideBarList.description"
@@ -131,6 +135,12 @@ export default {
     console.log(this.combinedata[0].language);
   },
   methods: {
+    previous() {
+      window.history.go(-1);
+    },
+    next() {
+      window.history.go(+1);
+    },
     openTryItButton(a) {
       window.open(a);
     },
