@@ -1,6 +1,6 @@
 <template>
   <div class="mainContainerView">
-    <div style="display:flex, justify-content:space-between">
+    <div class="navigationButton">
       <button class="tryItButton" @click="previous()">Previous</button>
       <button class="tryItButton" @click="next()">Next</button>
     </div>
@@ -41,6 +41,10 @@
           </button>
         </div>
       </div>
+    </div>
+    <div class="navigationButton">
+      <button class="tryItButton" @click="previous()">Previous</button>
+      <button class="tryItButton" @click="next()">Next</button>
     </div>
   </div>
 </template>
@@ -158,6 +162,10 @@ export default {
 </script>
 
 <style scoped>
+.navigationButton {
+  display: flex;
+  justify-content: space-between;
+}
 code[class*="language-"],
 pre[class*="language-"] {
   text-shadow: none;

@@ -181,7 +181,6 @@ export default {
   border: none;
 }
 .nav-item :hover {
-  background-color: #04aa6d;
   transform: scale(1.2);
 }
 .nav-item :focus {
