@@ -11,62 +11,66 @@ const cssData = {
             ],
         },
         {
-            questionText: "Which one of the following also known as Conditional Expression:",
+            questionText: " The property in CSS used to change the background color of an element is -",
             answerOptions: [
-                { answerText: "Alternative to if-else", isCorrect: false },
-                { answerText: "Switch statement", isCorrect: false },
+                { answerText: "bgcolor", isCorrect: false },
+                { answerText: "color", isCorrect: false },
                 {
-                    answerText: "If-then-else statement", isCorrect: false
+                    answerText: "background-color", isCorrect: true
                 },
                 {
-                    answerText: "immediate if", isCorrect: true
+                    answerText: "All of the above", isCorrect: false
                 },
             ],
         },
         {
-            questionText: " In JavaScript, what is a block of statement?",
+            questionText: " The property in CSS used to change the text color of an element is -",
             answerOptions: [
-                { answerText: "both conditional block and a single statement", isCorrect: false },
-                { answerText: "block that contains a single statement", isCorrect: false },
-                { answerText: "Conditional block", isCorrect: false },
-                { answerText: "block that combines a number of statements into a single compound statement", isCorrect: true },
+                { answerText: "bgcolor", isCorrect: false },
+                { answerText: "color", isCorrect: true },
+                {
+                    answerText: "background-color", isCorrect: false
+                },
+                {
+                    answerText: "All of the above", isCorrect: false
+                },
             ],
         },
         {
-            questionText: "When interpreter encounters an empty statements, what it will do:",
+            questionText: "The HTML attribute used to define the internal stylesheet is -",
             answerOptions: [
-                { answerText: "Shows a warning", isCorrect: false },
-                { answerText: "Prompts to complete the statement", isCorrect: false },
-                { answerText: "Throws an error", isCorrect: false },
-                { answerText: "Ignores the statements", isCorrect: true },
+                { answerText: "<style>", isCorrect: true },
+                { answerText: "style", isCorrect: false },
+                { answerText: "<link>", isCorrect: false },
+                { answerText: "<script>", isCorrect: false },
             ],
         },
         {
-            questionText: "The 'function' and ' var' are known as:",
+            questionText: "Which of the following CSS property is used to set the background image of an element?",
             answerOptions: [
-                { answerText: "Keywords", isCorrect: false },
-                { answerText: "Declaration statements", isCorrect: true },
-                { answerText: "Prototypes", isCorrect: false },
-                { answerText: "Data types", isCorrect: false },
-            ],
-        },
-        {
-            questionText:
-                "Which of the following variables takes precedence over the others if the names are the same?",
-            answerOptions: [
-                { answerText: "Global variable", isCorrect: false },
-                { answerText: "The local element", isCorrect: true },
-                { answerText: "The two of the above", isCorrect: false },
+                { answerText: "background-attachment", isCorrect: false },
+                { answerText: "background-image", isCorrect: true },
+                { answerText: "background-color", isCorrect: false },
                 { answerText: "None of the above", isCorrect: false },
             ],
         },
         {
-            questionText: "Which one of the following is the correct way for calling the JavaScript code?",
+            questionText:
+                "Which of the following is the correct syntax to display the hyperlinks without any underline?",
             answerOptions: [
-                { answerText: "Preprocessor", isCorrect: false },
-                { answerText: "Triggering Event", isCorrect: false },
-                { answerText: "RMI", isCorrect: false },
-                { answerText: "Function/Method", isCorrect: true },
+                { answerText: "a {text-decoration : underline;}", isCorrect: false },
+                { answerText: "a {decoration : no-underline;}", isCorrect: false },
+                { answerText: "a {text-decoration : none;}", isCorrect: true },
+                { answerText: "None of the above", isCorrect: false },
+            ],
+        },
+        {
+            questionText: " Are the negative values allowed in padding property?",
+            answerOptions: [
+                { answerText: "Yes", isCorrect: true },
+                { answerText: "No", isCorrect: false },
+                { answerText: "Can't say", isCorrect: false },
+                { answerText: "May be", isCorrect: false },
             ],
         },
     ],

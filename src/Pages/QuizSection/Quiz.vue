@@ -10,11 +10,7 @@
         style="max-width: 30rem; margin-top: 30px"
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
-        <img
-          src="https://media.nojoto.com/content/media/815080/2019/09/feed/c2cd58110ea126c9144b8e7de3fdf627/c2cd58110ea126c9144b8e7de3fdf627_default.jpg"
-          alt="less-marks"
-          style="width: 200px"
-        />
+        <h2>Focus on Study</h2>
       </b-card>
       <b-card
         v-if="score > 3 && score < 5"
@@ -22,10 +18,7 @@
         style="max-width: 30rem; margin-top: 30px"
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
-        <img
-          src="https://mgl.skyrock.net/art/SHAR.9728.250.2.jpg"
-          alt="less-marks"
-        />
+        <h2>You can do better</h2>
       </b-card>
       <b-card
         v-if="score >= 6"
@@ -33,11 +26,7 @@
         style="max-width: 30rem; margin-top: 30px"
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
-        <img
-          src=" https://thumbs.dreamstime.com/b/side-view-young-happy-woman-holding-box-brilliant-ideas-spreading-knowledge-side-view-woman-box-full-127250822.jpg"
-          alt="less-marks"
-          style="width: 200px"
-        />
+        <h2>brilliant</h2>
       </b-card>
     </div>
 
