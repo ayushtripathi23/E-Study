@@ -30,7 +30,7 @@ const homepagedata = [
     color: "#282A15",
   },
   {
-    headLabel: "JavaScript",
+    headLabel: "JAVASCRIPT",
     headSubHeading: "The Language For Programming Web Pages",
     button: "Learn JavaScript",
     buttonLink: "hey",
