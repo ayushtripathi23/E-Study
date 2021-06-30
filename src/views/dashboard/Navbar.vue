@@ -42,6 +42,7 @@
               @click="openView(item, currentSideBarList.languageBody[index])"
             >
               <router-link
+                style="text-decoration: none"
                 :to="{
                   path: `/dashboard/${currentSideBarList.languageTitle}/${item}`,
                 }"
@@ -148,6 +149,9 @@ export default {
 .sidebarItems {
   color: rgb(0, 0, 0);
   margin: 10px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-decoration: none;
+  display: block;
 }
 .sidebarTitle {
   width: 100%;
@@ -155,6 +159,7 @@ export default {
   padding-left: 20px;
   padding-bottom: 5px;
   padding-top: 5px;
+  font-size: 21px;
 }
 .sidebarBody {
   font-size: 19px;

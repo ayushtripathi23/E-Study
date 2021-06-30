@@ -182,11 +182,11 @@ pre[class*="language-"] {
   padding-bottom: 10px;
   font-size: 35px;
   padding-left: 20px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .htmlLabel1 {
   letter-spacing: 1.5;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 19px;
   padding-left: 50px;
 }
@@ -208,6 +208,7 @@ pre[class*="language-"] {
   height: 40px;
   border-radius: 1rem;
   margin-left: 20px;
+
   margin-bottom: 20px;
 }
 .goButton {

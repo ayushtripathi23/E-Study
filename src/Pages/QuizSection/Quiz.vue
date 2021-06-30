@@ -1,10 +1,46 @@
 <template>
   <div class="d-flex justify-content-center">
     <div v-if="showScore">
-      <b-card title="Results" style="max-width: 30rem; margin-top: 30px">
-        You Scored {{ score }} of {{ quizCategory.body.length }}
+      <!-- <b-card title="Results" style="max-width: 30rem; margin-top: 30px">
+        You Scored {{ score }} out of {{ quizCategory.body.length }}
+      </b-card> -->
+      <b-card
+        v-if="score < 3"
+        title="Results"
+        style="max-width: 30rem; margin-top: 30px"
+      >
+        You Scored {{ score }} out of {{ quizCategory.body.length }}
+        <img
+          src="https://media.nojoto.com/content/media/815080/2019/09/feed/c2cd58110ea126c9144b8e7de3fdf627/c2cd58110ea126c9144b8e7de3fdf627_default.jpg"
+          alt="less-marks"
+          style="width: 200px"
+        />
+      </b-card>
+      <b-card
+        v-if="score > 3 && score < 5"
+        title="Results"
+        style="max-width: 30rem; margin-top: 30px"
+      >
+        You Scored {{ score }} out of {{ quizCategory.body.length }}
+        <img
+          src="https://mgl.skyrock.net/art/SHAR.9728.250.2.jpg"
+          alt="less-marks"
+        />
+      </b-card>
+      <b-card
+        v-if="score >= 6"
+        title="Results"
+        style="max-width: 30rem; margin-top: 30px"
+      >
+        You Scored {{ score }} out of {{ quizCategory.body.length }}
+        <img
+          src=" https://thumbs.dreamstime.com/b/side-view-young-happy-woman-holding-box-brilliant-ideas-spreading-knowledge-side-view-woman-box-full-127250822.jpg"
+          alt="less-marks"
+          style="width: 200px"
+        />
       </b-card>
     </div>
+
     <div class="card-q" v-else>
       <span v-if="!startQuiz">
         <b-card

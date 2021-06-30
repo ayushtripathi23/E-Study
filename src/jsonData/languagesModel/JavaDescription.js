@@ -13,6 +13,9 @@ const JavaDescription = {
         "The name of the java file must match the class name. When saving the file, save it using the class name and add '.java' to the end of the filename. To run the example above on your computer, make sure that Java is properly installed: Go to the Get Started Chapter for how to install Java. The output should be:"
 
       ],
+      codeName: 'language-java',
+      codeDescription: "public class Main {\n  public static void main(String[] args) {\n      System.out.println('Hello World');\n    }\n}",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_helloworld"
     },
     {
       languageId: 0,
@@ -25,6 +28,9 @@ const JavaDescription = {
         "System.out.println()",
         "Inside the main() method, we can use the println() method to print a line of text to the screen:"
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 1,
@@ -39,6 +45,9 @@ const JavaDescription = {
         "This example uses a single-line comment at the end of a line of code:",
 
       ],
+      codeName: 'language-java',
+      codeDescription: "System.out.println('Hello World'); // This is a comment",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_single_comment_end"
     },
     {
       languageId: 2,
@@ -53,6 +62,9 @@ const JavaDescription = {
         "char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes",
         "boolean - stores values with two states: true or false"
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 2,
@@ -66,6 +78,9 @@ const JavaDescription = {
         "You can also declare a variable without assigning the value, and assign the value later:",
         "Note that if you assign a new value to an existing variable, it will overwrite the previous value:"
       ],
+      codeName: 'language-java',
+      codeDescription: "String name = 'John';\nSystem.out.println(name);",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_variables"
     },
     {
       languageId: 2,
@@ -76,6 +91,9 @@ const JavaDescription = {
         "Code after double slashes // or between /* and */ is treated as a comment.",
         "Comments are ignored, and will not be executed:",
       ],
+      codeName: 'language-java',
+      codeDescription: "final int myNum = 15;\nmyNum = 20;  // will generate an error: cannot assign a value to a final variable",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_variables_final"
     },
     {
       languageId: 2,
@@ -84,6 +102,9 @@ const JavaDescription = {
       languageBody: [
         "A demonstration of how to declare variables of other types:",
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 2,
@@ -95,6 +116,9 @@ const JavaDescription = {
         "You can also use the + character to add a variable to another variable:",
         "For numeric values, the + character works as a mathematical operator (notice that we use int (integer) variables here):"
       ],
+      codeName: 'language-java',
+      codeDescription: "String name = 'John';\nSystem.out.println('Hello' + name);",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_variables2"
     },
     {
       languageId: 3,
@@ -107,6 +131,9 @@ const JavaDescription = {
         "Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)",
 
       ],
+      codeName: 'language-java',
+      codeDescription: "int myNum = 5;// Integer (whole number)\nfloat myFloatNum = 5.99f;// Floating point number\nchar myLetter = 'D';// Character\nboolean myBool = true;// Boolean\nString myText = 'Hello';// String",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_data_types"
     },
     {
       languageId: 3,
@@ -118,6 +145,9 @@ const JavaDescription = {
         "Floating point types represents numbers with a fractional part, containing one or more decimals. There are two types: float and double.",
         "Even though there are many numeric types in Java, the most used for numbers are int (for whole numbers) and double (for floating point numbers). However, we will describe them all as you continue to read."
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 3,
@@ -127,6 +157,9 @@ const JavaDescription = {
         "Byte",
         "The byte data type can store whole numbers from -128 to 127. This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127:",
       ],
+      codeName: 'language-java',
+      codeDescription: "byte myNum = 100;\nSystem.out.println(myNum);",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_type_byte"
     },
     // type casting
     {
@@ -141,6 +174,9 @@ const JavaDescription = {
         "Widening Casting",
         "Widening casting is done automatically when passing a smaller size type to a larger size type:"
       ],
+      codeName: 'language-java',
+      codeDescription: "public class Main {\n  public static void main(String[] args) {\n      int myInt = 9;\n      double myDouble = myInt; // Automatic casting: int to double\n      System.out.println(myInt);      // Outputs 9\n      System.out.println(myDouble);   // Outputs 9.0\n    }\n}",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_casting_wide"
     },
     {
       languageId: 4,
@@ -149,6 +185,9 @@ const JavaDescription = {
       languageBody: [
         "Narrowing casting must be done manually by placing the type in parentheses in front of the value:",
       ],
+      codeName: 'language-java',
+      codeDescription: "public class Main {\n  public static void main(String[] args) {\n      double myDouble = 9.78d;\n      int myInt = (int) myDouble; // Manual casting: double to int\n      System.out.println(myDouble);   // Outputs 9.78\n      System.out.println(myInt);      // Outputs 9\n    }\n}",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_casting_narrow"
     },
     {
       languageId: 5,
@@ -165,6 +204,9 @@ const JavaDescription = {
         "Logical operators",
         "Bitwise operators"
       ],
+      codeName: 'language-java',
+      codeDescription: "int x = 100 + 50;",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_oper"
     },
     {
       languageId: 5,
@@ -173,6 +215,9 @@ const JavaDescription = {
       languageBody: [
         "Arithmetic operators are used to perform common mathematical operations.",
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 5,
@@ -184,6 +229,9 @@ const JavaDescription = {
         "The addition assignment operator (+=) adds a value to a variable:",
         "A list of all assignment operators:"
       ],
+      codeName: 'language-java',
+      codeDescription: "int x = 10;\nx += 5;",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_oper_assignment2"
     },
     {
       languageId: 5,
@@ -192,6 +240,9 @@ const JavaDescription = {
       languageBody: [
         "Comparison operators are used to compare two values:",
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     {
       languageId: 5,
@@ -200,6 +251,9 @@ const JavaDescription = {
       languageBody: [
         "Logical operators are used to determine the logic between variables or values:",
       ],
+      codeName: 'language-java',
+      codeDescription: "",
+      codeEditorLink: ""
     },
     // string 
     {
@@ -210,6 +264,9 @@ const JavaDescription = {
         "Strings are used for storing text.",
         "A String variable contains a collection of characters surrounded by double quotes:"
       ],
+      codeName: 'language-java',
+      codeDescription: "String greeting = 'Hello';",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings"
     },
     {
       languageId: 6,
@@ -219,6 +276,9 @@ const JavaDescription = {
         "A String in Java is actually an object, which contain methods that can perform certain operations on strings. For example, the length of a string can be found with the length() method:",
 
       ],
+      codeName: 'language-java',
+      codeDescription: "String txt = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';\nSystem.out.println('The length of the txt string is: ' + txt.length());",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings_length"
     },
     {
       languageId: 6,
@@ -228,6 +288,9 @@ const JavaDescription = {
         "There are many string methods available, for example toUpperCase() and toLowerCase():",
 
       ],
+      codeName: 'language-java',
+      codeDescription: "String txt = 'Hello World';\nSystem.out.println(txt.toUpperCase());   // Outputs 'HELLO WORLD'\n      System.out.println(txt.toLowerCase());   // Outputs 'hello world'",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings_touppercase"
     },
     {
       languageId: 6,
@@ -237,6 +300,9 @@ const JavaDescription = {
         "The indexOf() method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):",
 
       ],
+      codeName: 'language-java',
+      codeDescription: "String txt = 'Please locate where 'locate' occurs!';\nSystem.out.println(txt.indexOf('locate')); // Outputs 7",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings_indexof"
     },
     {
       languageId: 6,
@@ -247,6 +313,9 @@ const JavaDescription = {
         "You can also use the concat() method to concatenate two strings:"
 
       ],
+      codeName: 'language-java',
+      codeDescription: "String firstName = 'John';\nString lastName = 'Doe';\n      System.out.println(firstName + ' '' + lastName);",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings_conc"
     },
     {
       languageId: 6,
@@ -261,6 +330,9 @@ const JavaDescription = {
         "The sequence ''  inserts a single backslash in a string:"
 
       ],
+      codeName: 'language-java',
+      codeDescription: "String txt = 'We are the so- called 'Vikings' from the north.';",
+      codeEditorLink: "https://www.w3schools.com/java/tryjava.asp?filename=demo_strings_double_quote"
     },
   ],
 };

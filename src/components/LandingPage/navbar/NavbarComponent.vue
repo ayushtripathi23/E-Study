@@ -46,7 +46,10 @@
                         v-for="(item, index) in frontend"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -60,7 +63,10 @@
                         v-for="(item, index) in server"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -72,7 +78,10 @@
                         v-for="(item, index) in webBuiding"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -86,7 +95,10 @@
                         v-for="(item, index) in javaScript"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -98,7 +110,10 @@
                         v-for="(item, index) in programming"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -112,7 +127,10 @@
                         v-for="(item, index) in artificial"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -124,7 +142,10 @@
                         v-for="(item, index) in xml"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -162,7 +183,10 @@
                         v-for="(item, index) in htmlref"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -176,7 +200,10 @@
                         v-for="(item, index) in javaScriptref"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -188,7 +215,10 @@
                         v-for="(item, index) in programmingRef"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -202,7 +232,10 @@
                         v-for="(item, index) in serversideRef"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -214,7 +247,10 @@
                         v-for="(item, index) in xmlref"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -228,7 +264,10 @@
                         v-for="(item, index) in characterRef"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -267,7 +306,10 @@
                         v-for="(item, index) in exercise"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
@@ -276,11 +318,17 @@
                   <div class="col">
                     <div>
                       <h1 class="dropdownHeading">Quizzes</h1>
-                      <div class="dropdownLabels"   v-for="(item, index) in quiz"
-                        :key="index">
-                        <router-link :to="`/quiz/${item.language}`">
+                      <div
+                        class="dropdownLabels"
+                        v-for="(item, index) in quiz"
+                        :key="index"
+                      >
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/quiz/${item.language}`"
+                        >
                           <h6>{{ item.language }}</h6>
-                          </router-link>
+                        </router-link>
                       </div>
                     </div>
                   </div>
@@ -292,7 +340,10 @@
                         v-for="(item, index) in serverSideExercise"
                         :key="index"
                       >
-                        <router-link :to="`/dashboard/${item.category}`">
+                        <router-link
+                          style="text-decoration: none"
+                          :to="`/dashboard/${item.category}`"
+                        >
                           <h6>{{ item.language }}</h6>
                         </router-link>
                       </div>
