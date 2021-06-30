@@ -6,7 +6,7 @@ const quizData = {
       answerOptions: [
         { answerText: "Head, Title, HTML, body", isCorrect: false },
         { answerText: "HTML, Body, Title, Head", isCorrect: false },
-        { answerText: "HTML, Head, Title, Body", isCorrect: false },
+        { answerText: "HTML, Title, Head, Body", isCorrect: false },
         { answerText: "HTML, Head, Title, Body", isCorrect: true },
       ],
     },
