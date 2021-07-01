@@ -4,11 +4,11 @@ const chipCard = [
     color: "#FFC0C7",
   },
   {
-    mainHeading: "JQuery",
+    mainHeading: "JQUERY",
     color: "#FFF4A3",
   },
   {
-    mainHeading: "Java",
+    mainHeading: "JAVA",
     color: "#F3ECEA",
   },
   {
@@ -20,7 +20,7 @@ const chipCard = [
     color: "#96D4D4",
   },
   {
-    mainHeading: "Bootstrap",
+    mainHeading: "BOOTSTRAP",
     color: "#E7E9EB",
   },
 
@@ -33,19 +33,19 @@ const chipCard = [
     color: "#FFF4A3",
   },
   {
-    mainHeading: "Kotlin",
+    mainHeading: "KOTLIN",
     color: "#F3ECEA",
   },
   {
-    mainHeading: "MySQL",
+    mainHeading: "MYSQL",
     color: "#D9EEE1",
   },
   {
-    mainHeading: "NodeJS",
+    mainHeading: "NODEJS",
     color: "#96D4D4",
   },
   {
-    mainHeading: "React",
+    mainHeading: "REACT",
     color: "#E7E9EB",
   },
 
@@ -54,7 +54,7 @@ const chipCard = [
     color: "#FFC0C7",
   },
   {
-    mainHeading: "AngularJS",
+    mainHeading: "ANGULARJS",
     color: "#E7E9EB",
   },
   {
@@ -79,7 +79,7 @@ const chipCard = [
     color: "#D9EEE1",
   },
   {
-    mainHeading: "Graphics",
+    mainHeading: "GRAPHICS",
     color: "#E7E9EB",
   },
   {
@@ -87,15 +87,15 @@ const chipCard = [
     color: "#96D4D4",
   },
   {
-    mainHeading: "Canvas",
+    mainHeading: "CANVAS",
     color: "#E7E9EB",
   },
   {
-    mainHeading: "Cyber",
+    mainHeading: "CYBER",
     color: "#E7E9EB",
   },
   {
-    mainHeading: "Colors",
+    mainHeading: "COLORS",
     color: "#FFF4A3",
   },
 
@@ -104,19 +104,19 @@ const chipCard = [
     color: "#F3ECEA",
   },
   {
-    mainHeading: "MatPlotLib",
+    mainHeading: "MATPLOTLIB",
     color: "#96D4D4",
   },
   {
-    mainHeading: "NumPy",
+    mainHeading: "NUMPY",
     color: "#E7E9EB",
   },
   {
-    mainHeading: "Pandas",
+    mainHeading: "PANDAS",
     color: "#FFF4A3",
   },
   {
-    mainHeading: "SciPy",
+    mainHeading: "SCIPY",
     color: "#E7E9EB",
   },
   {
@@ -129,7 +129,7 @@ const chipCard = [
   },
 
   {
-    mainHeading: "Statics",
+    mainHeading: "STATICS",
     color: "#D9EEE1",
   },
 ];
