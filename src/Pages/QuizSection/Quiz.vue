@@ -11,6 +11,9 @@
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
         <h2>Focus on Study</h2>
+        <router-link to="/activity">
+          <button>See Activity</button>
+        </router-link>
       </b-card>
       <b-card
         v-if="score > 3 && score < 5"
@@ -19,6 +22,7 @@
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
         <h2>You can do better</h2>
+        <button>See Activity</button>
       </b-card>
       <b-card
         v-if="score >= 6"
@@ -27,6 +31,7 @@
       >
         You Scored {{ score }} out of {{ quizCategory.body.length }}
         <h2>brilliant</h2>
+        <button>See Activity</button>
       </b-card>
     </div>
 
@@ -124,6 +129,7 @@ export default {
       let nextQuestion = this.currentQuestion + 1;
       if (isCorrect) {
         this.score = this.score + 1;
+        localStorage.setItem("score", this.score);
       }
       if (nextQuestion < this.quizCategory.body.length) {
         this.currentQuestion = nextQuestion;
